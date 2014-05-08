@@ -3,6 +3,11 @@ underscore.hasInside
 
 Check if an object or it's descendants have a property.
 
+Installation
+------------
+
+`npm install underscore.has-inside`
+
 Usage
 -----
 
