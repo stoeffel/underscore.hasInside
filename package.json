@@ -21,5 +21,12 @@
   "bugs": {
     "url": "https://github.com/stoeffel/underscore.hasInside/issues"
   },
-  "homepage": "https://github.com/stoeffel/underscore.hasInside"
+  "homepage": "https://github.com/stoeffel/underscore.hasInside",
+  "devDependencies": {
+    "should": "~3.3.1",
+    "mocha": "~1.18.2"
+  },
+  "dependencies": {
+    "underscore": "~1.6.0"
+  }
 }
