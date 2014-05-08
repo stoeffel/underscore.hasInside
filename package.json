@@ -1,8 +1,8 @@
 {
   "name": "underscore.has-inside",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Recursivly searching for a property by name",
-  "main": "index.js",
+  "main": "lib/hasInside.js",
   "scripts": {
     "test": "mocha"
   },
