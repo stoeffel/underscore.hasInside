@@ -13,7 +13,7 @@ Usage
 
 ```javascript
         _.mixin({
-            hasInside: require('underscore.hasInside')
+            hasInside: require('underscore.has-inside')
         });
 
 
