@@ -7,7 +7,6 @@ Usage
 -----
 
 ```javascript
-// Mixin
         _.mixin({
             hasInside: require('underscore.hasInside')
         });
