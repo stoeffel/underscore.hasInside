@@ -1,6 +1,6 @@
 {
   "name": "underscore.hasInside",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Recursivly searching for a property by name",
   "main": "index.js",
   "scripts": {
