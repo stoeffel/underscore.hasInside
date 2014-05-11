@@ -44,7 +44,7 @@ describe('hasInside', function() {
             moo: {
                 boo: 'poo'
             },
-            arrrr: [1,2,3,4]
+            arrrr: [1, 2, 3, 4]
         }, 'boo').should.be.ok;
     });
 });
