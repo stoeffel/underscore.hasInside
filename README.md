@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/stoeffel/underscore.hasInside.png?branch=master)](https://travis-ci.org/stoeffel/underscore.hasInside)
+
 underscore.hasInside
 ====================
 
