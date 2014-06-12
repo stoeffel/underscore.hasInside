@@ -16,8 +16,14 @@ Usage
 
 ### setup
 
+As a mixin for [underscore](underscorejs.org).
 ```javascript
         _.mixin(require('underscore.has-inside'));
+```
+
+Standalone
+```javascript
+        _I = require('underscore.has-inside');
 ```
 
 
