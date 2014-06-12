@@ -24,16 +24,16 @@ describe('hasInside', function() {
                 return obj.foo && obj.foo === 'bar';
             };
             _.findInside({
-                foo: 'bar'            
+                foo: 'bar'
             }, predicate).should.be.ok;
 
             _.findInside({
-                moo: 'boo'            
+                moo: 'boo'
             }, predicate).should.not.be.ok;
 
             _.findInside({
                 sub: {
-                    moo: 'boo'            
+                    moo: 'boo'
                 }
             }, predicate).should.not.be.ok;
         });
@@ -77,6 +77,22 @@ describe('hasInside', function() {
                 },
                 arrrr: [1, 2, 3, 4]
             }, 'boo').should.be.ok;
+        });
+
+        it('checks if the value is equals to the expected value', function() {
+            var obj = {
+                foo: 'bar',
+                nil: null,
+                moo: {
+                    boo: 'poo'
+                },
+                arrrr: [1, 2, 3, 4]
+            };
+            _.hasInside(obj, 'foo', 'bar').should.be.ok;
+            _.hasInside(obj, 'foo', 'blub').should.not.be.ok;
+            _.hasInside(obj, 'boo', 'moo').should.not.be.ok;
+            _.hasInside(obj, 'boo', 'poo').should.be.ok;
+            _.hasInside(obj, 'nil', null).should.be.ok;
         });
     });
 });

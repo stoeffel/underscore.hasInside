@@ -50,6 +50,7 @@ Check if an object or it's descendants have a property
             arrrr: [1,2,3,4]
         };
         _.hasInside(obj, 'boo');  // -> true
-
         _.hasInside(obj, 'bar');  // -> false
+        _.hasInside(obj, 'boo', 'poo');  // -> true
+        _.hasInside(obj, 'bar', 'nope');  // -> false
 ```
