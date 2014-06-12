@@ -94,5 +94,24 @@ describe('hasInside', function() {
             _.hasInside(obj, 'boo', 'poo').should.be.ok;
             _.hasInside(obj, 'nil', null).should.be.ok;
         });
+
+        it('checks the value using a predicate function', function() {
+            var obj = {
+                sub: {
+                    sub: {
+                        number: 2
+                    }
+                }
+            };
+            _.hasInside(obj, 'number', function(value) {
+                return value === 2;
+            }).should.be.ok;
+            _.hasInside(obj, 'number', function(value) {
+                return value === 3;
+            }).should.not.be.ok;
+            _.hasInside(obj, 'number', function(value) {
+                return null;
+            }).should.not.be.ok;
+        });
     });
 });

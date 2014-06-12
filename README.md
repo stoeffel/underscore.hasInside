@@ -51,7 +51,8 @@ Check if an object or it's descendants have a property
         var obj = {
             foo: 'bar',
             moo: {
-                boo: 'poo'
+                boo: 'poo',
+                num: 2
             },
             arrrr: [1,2,3,4]
         };
@@ -59,4 +60,8 @@ Check if an object or it's descendants have a property
         _.hasInside(obj, 'bar');  // -> false
         _.hasInside(obj, 'boo', 'poo');  // -> true
         _.hasInside(obj, 'bar', 'nope');  // -> false
+        _.hasInside(obj, 'bar', 'nope');  // -> false
+        _.hasInside(obj, 'bar', function(value) {
+            return value > 1;
+        });  // -> true
 ```
